@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="icon" href="./images.png">
+     <link href="https://fonts.googleapis.com/css2?family=Arvo:ital@1&family=Assistant:wght@200..800&family=Lobster&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat+Subrayada:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans+Caption:wght@400;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="./css/bootstrap.min.css">
+
+<link rel="stylesheet" href="./css/main.css">
+<link rel="stylesheet" href="./css/all.min.css">
+
+    
+</head>
+<body>
+<section class="book mx-auto w-100 ">
+    <div class="container  py-5  ">
+        
+        <div class="head text-center">            <h1>Bookmarker</h1>
+            <div class="layer"></div>
+        </div>
+          
+        <h6>........................................................................................................................................................................................................................................................................</h6>
+  <div class="d-flex justify-content-center align-items-center font">
+    <i class="fa-solid fa-bookmark fs-3"></i> 
+      <h3 class="py-2 px-2 "> Bookmark your favorite sites </h3>
+      <i class="fa-solid fa-bookmark fs-3"></i>   
+
+  </div>
+  <label class="py-2 " for="name"> <i class="fa-solid fa-book-bookmark px-1" ></i> Site Name</label>
+  <input type="text" id="name" class="form-control" placeholder="bookmark name">
+  <div id="one" class="alert alert-danger d-none" role="alert">
+    sit name must contain at least 3 characters
+  </div>
+
+<label for="url" class="py-2 mt-4"><i class="fa-solid fa-link"></i> Site URL</label>
+  <input type="text" id="url" placeholder="website url" class="form-control ">
+
+  <div id="two" class="alert alert-danger d-none" role="alert">
+    sit URL must be a valid one
+  </div>
+<div class="text-center my-4">
+    <button onclick="addSite()" class="btn btn-danger px-5 ">Submit</button>
+</div>
+
+<h6>........................................................................................................................................................................................................................................................................</h6>
+
+<table class="table mt-4"> 
+    <thead class="text-center">
+        <th>index</th>
+        <th>Website Name	</th>
+        <th>Visit</th>
+        <th>Delete</th>
+    </thead>
+
+
+        <tbody class="text-center" id="mark">
+            <tr>
+              
+                <td><button type="button" class="btn btn-outline-warning"><a  href="" target="_blank" > Visit</a></button></td>
+                <td><button type="button" class="btn btn-outline-danger"><i class="fa-regular fa-trash-can"></i> Delete</button></td>
+             </tr> 
+        </tbody>
+</table>
+
+    </div>
+</section>
+
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>

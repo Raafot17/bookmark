@@ -1,0 +1,48 @@
+body{
+   font-weight: bold;
+}
+::selection {
+    background-color: #FEC260; 
+    color: #333;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  }
+.book{
+    background-color: #F7ECDE;
+    height: 100%;
+}
+h1{
+    font-family: "Lobster", sans-serif;
+    font-size: 60px;
+    position: relative;
+z-index: 2;
+}
+.layer{
+    content: "";
+    width: 293px;
+    height: 20px;
+    background-color:#FEC260;
+    top:95px;
+    right: 39%;
+    position: absolute;
+    z-index: 1;
+    transition:.5s ;
+    -webkit-transition:.5s ;
+    -moz-transition:.5s ;
+    -ms-transition:.5s ;
+    -o-transition:.5s ;
+} 
+.head:hover .layer{
+    top:65px;
+    height: 40px;
+}
+
+
+.font{
+   
+        background-image: linear-gradient(to right, #40A65C, #f89b22);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+      
+}
+
